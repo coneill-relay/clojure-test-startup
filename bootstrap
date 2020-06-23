@@ -3,3 +3,7 @@
 docker-compose down --remove-orphans
 
 docker-compose up -d
+
+sleep 10
+docker-compose exec couchbase couchbase-cli cluster-init --cluster-username admin --cluster-password password 
+docker-compose exec couchbase couchbase-cli bucket-create -c localhost -u admin -p password --bucket-type couchbase --bucket relay_data --bucket-ramsize 512

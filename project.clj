@@ -5,8 +5,9 @@
                  ["snapshots" {:url "s3p://relay-maven-repo/snapshots/" :creds :gpg}]]
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"
             :url "https://www.eclipse.org/legal/epl-2.0/"}
-  :dependencies [[org.clojure/clojure "1.10.1"]]
-;                 [com.relaynetwork/slipcover "0.3.14" :exclusions [["com.amazonaws/aws-java-sdk"]]]]
+  :dependencies [[org.clojure/clojure "1.10.1"]
+                 [com.couchbase.client/java-client "2.7.15"]
+                 [com.relaynetwork/slipcover "0.3.17-SNAPSHOT"]] ;:exclusions [["com.amazonaws/aws-java-sdk"]]]
   :main ^:skip-aot testing-startup.core
   :target-path "target/%s"
   :profiles {:uberjar {:aot :all}})
