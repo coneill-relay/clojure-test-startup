@@ -1,20 +1,22 @@
 # testing-startup
 
-FIXME: description
+Testing couchbase connection 
 
 ## Installation
 
-Download from http://example.com/FIXME.
+N/A
 
 ## Usage
 
-FIXME: explanation
+```
+lein run
+```
 
+    $ lein uberjar
     $ java -jar testing-startup-0.1.0-standalone.jar [args]
 
 ## Options
 
-FIXME: listing of options this app accepts.
 
 ## Examples
 
