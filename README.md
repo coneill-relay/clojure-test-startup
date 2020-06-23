@@ -14,6 +14,7 @@ N/A
 ```
 lein run
 ```
+or
 
     $ lein uberjar
     $ java -jar testing-startup-0.1.0-standalone.jar [args]
