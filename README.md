@@ -8,6 +8,9 @@ N/A
 
 ## Usage
 
+### Start docker
+    $ ./bootstrap
+
 ```
 lein run
 ```
