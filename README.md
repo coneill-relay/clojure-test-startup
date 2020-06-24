@@ -1,16 +1,21 @@
 # testing-startup
 
-Testing couchbase connection 
+Testing couchbase connection with various methods 
+
+Starts a connection to a couchbase bucket and logs the time taken
 
 ## Installation
 
-N/A
+Java8
+Maven
+Docker
 
 ## Usage
 
 ### Start docker
     $ ./bootstrap
 
+### Clojure
 ```
 lein run
 ```
@@ -18,6 +23,14 @@ or
 
     $ lein uberjar
     $ java -jar testing-startup-0.1.0-standalone.jar [args]
+    
+### Java
+The java can be run with either 2.7.15 or 3.0.5 by changing the dependencies and code in the pom.xml and main.java file respectively
+
+```bash
+mvn package
+java -jar target/java-archive-1.0-SNAPSHOT-jar-with-dependencies.jar
+```
 
 ## Options
 
